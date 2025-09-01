@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Login button not working",
+    "priority": "high",
+    "area": "UI",
+    "status": "open",
+    "assignee": null,
+    "createdAt": "2025-08-31T17:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "dfghn",
+    "priority": "medium",
+    "area": "fgbhn",
+    "status": "open",
+    "assignee": null,
+    "createdAt": "2025-08-31T18:55:53.575Z"
+  },
+  {
+    "id": 3,
+    "title": "dfghj",
+    "priority": "low",
+    "area": "gbn",
+    "status": "open",
+    "assignee": null,
+    "createdAt": "2025-08-31T19:25:24.320Z"
+  },
+  {
+    "id": 4,
+    "title": "fdsa",
+    "priority": "high",
+    "area": "ax",
+    "status": "open",
+    "assignee": null,
+    "createdAt": "2025-09-01T03:15:02.458Z"
+  },
+  {
+    "id": 5,
+    "title": "esdrftgyhuijk",
+    "priority": "high",
+    "area": "dxcfvghbnj",
+    "status": "open",
+    "assignee": null,
+    "createdAt": "2025-09-01T06:28:06.310Z"
+  },
+  {
+    "id": 6,
+    "title": "cfvghbjn",
+    "priority": "high",
+    "area": "cfvghbnj",
+    "status": "open",
+    "assignee": null,
+    "createdAt": "2025-09-01T06:31:53.023Z"
+  },
+  {
+    "id": 7,
+    "title": "sdfghnj",
+    "priority": "high",
+    "area": "sedrftgh",
+    "status": "open",
+    "assignee": null,
+    "createdAt": "2025-09-01T09:29:42.530Z"
+  }
+]
