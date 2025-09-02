@@ -13,32 +13,46 @@ export default async function IssuesPage() {
   const issues = await getIssues();
 
   return (
-    <div className="p-4">
-      <h1 className="mb-4 text-2xl font-bold">Issue List</h1>
-      <p className="mb-4">
-        <a href="/issues/create" className="text-blue-500 underline">Create New Issue</a>
+    <div className="min-h-screen p-6 bg-gray-900">
+      <h1 className="mb-6 text-3xl font-bold text-yellow-400">Issue List</h1>
+
+      <p className="mb-6">
+        <a
+          href="/issues/create"
+          className="text-green-400 underline transition-colors duration-300 hover:text-green-200"
+        >
+          Create New Issue
+        </a>
       </p>
-      <table className="w-full border border-collapse border-gray-300 table-auto">
-        <thead>
-          <tr className="bg-gray-200">
-            <th className="p-2">ID</th>
-            
-            <th className="p-2">Title</th>
-            <th className="p-2">Priority</th>
-            <th className="p-2">Area</th>
-            <th className="p-2">Status</th>
-            <th className="p-2">Assignee</th>
-            <th className="p-2">Created At</th>
-          </tr>
-        </thead>
-        <tbody>
-          {issues.map(issue => (
-            <IssueRow key={issue.id} issue={issue} />
-          ))}
-        </tbody>
-      </table>
+
+      <div className="overflow-x-auto">
+        <table className="w-full text-white border border-collapse border-gray-700 table-auto">
+          <thead>
+            <tr className="text-yellow-200 uppercase bg-indigo-700">
+              <th className="p-3 border-b border-gray-600">ID</th>
+              <th className="p-3 border-b border-gray-600">Title</th>
+              <th className="p-3 border-b border-gray-600">Priority</th>
+              <th className="p-3 border-b border-gray-600">Area</th>
+              <th className="p-3 border-b border-gray-600">Status</th>
+              <th className="p-3 border-b border-gray-600">Assignee</th>
+              <th className="p-3 border-b border-gray-600">Created At</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {issues.map((issue, index) => (
+              <IssueRow
+                key={issue.id}
+                issue={issue}
+                rowClass={index % 2 === 0 ? 'bg-gray-800' : 'bg-gray-700'}
+              />
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
+
 
 
